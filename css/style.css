@@ -22,6 +22,41 @@ body {
 
 .pic, .box {
   position: relative;
+  background-size: contain;
+}
+
+.box img{
+  visibility: hidden;
+  width: 100%;
+}
+
+.box:hover img, .box.active {
+  cursor: pointer;
+  visibility: visible;
+}
+
+.box.one{
+  background-image: url('../img/1.webp');
+}
+
+.box.two{
+  background-image: url('../img/2.webp');
+}
+
+.box.three {
+ background-image: url('../img/3.webp');
+}
+
+.box.four {
+  background-image: url('../img/4.webp');
+}
+
+.box.five {
+  background-image: url('../img/5.webp');
+}
+
+.box.six {
+  background-image: url('../img/6.webp');
 }
 
 .box .wishlist {
@@ -37,10 +72,6 @@ body {
 .wishlist::after {
   content: '\2764';
   font-size: 24px;
-}
-
-img {
-  width: 100%;
 }
 
 .text {
@@ -77,6 +108,11 @@ h4 {
 
 .euro:after {
   content: '\20AC';
+}
+
+.sored{
+  color: rgb(255,0,34);
+  font-weight: 600;
 }
 
 span.bar{
